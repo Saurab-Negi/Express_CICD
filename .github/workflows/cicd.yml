@@ -27,4 +27,4 @@ jobs:
       - name: Delete old container
         run: docker rm -f nodejs-app-container  
       - name: Run Docker Container
-        run: docker run -d -p 8000:8000 --name nodejs-app-container -e MONGO_URI='${{ secrets.MONGO_URI }}' saurabnegi17/express_cicd
+        run: docker run -d -p 8000:8000 --name nodejs-app-container -e MONGO_PASSWORD='${{ secrets.MONGO_PASSWORD }}' saurabnegi17/express_cicd
