@@ -4,7 +4,7 @@ import 'dotenv/config';
 
 import db from "./mongoC.js";
 
-const port = process.env.PORT;
+const port = 8000;
 const app = express();
 
 app.use((_req, res, next) => {
